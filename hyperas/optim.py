@@ -207,6 +207,6 @@ def temp_string(imports, model, data, space):
 
 def write_temp_files(tmp_str, path='./temp_model.py'):
     with open(path, 'w') as f:
-        f.write('#' + tmp_str)
+        f.write('#' + tmp_str.strip())
         f.close()
     return
